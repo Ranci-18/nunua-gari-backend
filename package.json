@@ -2,10 +2,12 @@
   "name": "nunua-gari-backend",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
+  "main": "app/routes/server.ts",
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "dev": "ts-node-dev --respawn --transpile-only app/routes/server.ts",
     "build": "tsc",
-    "start": "node dist/index.js"
+    "start": "node dist/app/routes/server.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
